@@ -45,7 +45,7 @@ const MovieForm = props => {
   };
 
   if (!movie) {
-    return <div>Loading...</div>;
+    return <div>Loading</div>;
   }
 
   return (
@@ -82,6 +82,7 @@ const MovieForm = props => {
           />
         );
       })}
+      
       <button onClick={addStar}>Add Star</button>
       <button type="submit">Update Movie</button>
     </form>
