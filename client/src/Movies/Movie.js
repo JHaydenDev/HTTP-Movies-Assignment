@@ -11,6 +11,7 @@ export default class Movie extends React.Component {
     };
   }
 
+//Added Delete here
   deleteMovie = id => {
     axios.delete(`http://localhost:5000/api/movies/${id}`).catch(err => {
       console.log(err.response);
@@ -43,7 +44,7 @@ export default class Movie extends React.Component {
 
   render() {
     if (!this.state.movie) {
-      return <div>Loading movie information...</div>;
+      return <div>Loading</div>;
     }
 
     return (
